@@ -312,14 +312,15 @@ public class HomePage extends AppCompatActivity
 
         }
         else if (id == R.id.nav_slideshow) {
-            Intent intent = new Intent(HomePage.this,MyOrders.class);
-            startActivity(intent);
+
         }
         else if (id == R.id.nav_tools) {
-
+            Intent intent = new Intent(HomePage.this,MyOrderList.class);
+            startActivity(intent);
         }
         else if (id == R.id.nav_share) {
-
+            Intent intent = new Intent(HomePage.this,UserProfile.class);
+            startActivity(intent);
         }
         else if (id == R.id.logout) {
             Paper.book().destroy();

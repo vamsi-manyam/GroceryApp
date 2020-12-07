@@ -12,7 +12,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MyOrders"></activity>
+        <activity
+            android:name=".MyOrderList"
+            android:label="@string/title_activity_my_order_list"
+            android:parentActivityName=".HomePage"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.vam.groceryapp.HomePage" />
+        </activity>
         <activity
             android:name=".UserProfile"
             android:label="User Profile"
